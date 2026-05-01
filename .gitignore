@@ -6,6 +6,9 @@ node_modules/
 # 暗号化後のファイル(.env.keys含む)は安全にコミット可能
 .env.keys
 
+# このリポジトリでは例外的に.envファイルもコミットする
+!.env
+
 # dotenvx private keys
 # 秘密鍵は絶対にコミットしない
 DOTENV_PRIVATE_KEY*

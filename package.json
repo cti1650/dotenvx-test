@@ -9,7 +9,8 @@
     "start:prod": "dotenvx run -f .env.production -- node index.js",
     "encrypt": "dotenvx encrypt",
     "encrypt:dev": "dotenvx encrypt -f .env.development",
-    "encrypt:prod": "dotenvx encrypt -f .env.production"
+    "encrypt:prod": "dotenvx encrypt -f .env.production",
+    "prepare": "lefthook install"
   },
   "keywords": [
     "dotenvx",
@@ -20,6 +21,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@dotenvx/dotenvx": "^1.0.0"
+    "@dotenvx/dotenvx": "^1.0.0",
+    "lefthook": "^2.1.6"
   }
 }

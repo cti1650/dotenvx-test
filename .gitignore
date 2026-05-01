@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Environment files (unencrypted)
+# 暗号化前の.envファイルはコミットしない
+# 暗号化後のファイル(.env.keys含む)は安全にコミット可能
+.env.keys
+
+# dotenvx private keys
+# 秘密鍵は絶対にコミットしない
+DOTENV_PRIVATE_KEY*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*

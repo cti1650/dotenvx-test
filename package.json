@@ -1,0 +1,25 @@
+{
+  "name": "dotenvx-test",
+  "version": "1.0.0",
+  "description": "dotenvxの動作確認用リポジトリ",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotenvx run -- node index.js",
+    "start:dev": "dotenvx run -f .env.development -- node index.js",
+    "start:prod": "dotenvx run -f .env.production -- node index.js",
+    "encrypt": "dotenvx encrypt",
+    "encrypt:dev": "dotenvx encrypt -f .env.development",
+    "encrypt:prod": "dotenvx encrypt -f .env.production"
+  },
+  "keywords": [
+    "dotenvx",
+    "env",
+    "environment",
+    "variables"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.0.0"
+  }
+}

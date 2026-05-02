@@ -284,13 +284,13 @@ pre-commit:
 
 ### CI/CDでの二重チェック
 
-GitHub Actions等のCIでも検知できます。
+ローカルのpre-commitをすり抜けた場合に備え、本リポジトリでは GitHub Actions でも `dotenvx ext prebuild` を実行しています（[.github/workflows/ci.yml](.github/workflows/ci.yml)）。
 
 ```bash
 npx dotenvx ext prebuild
 ```
 
-ビルド/デプロイ時に平文の混入を検知し、処理を中断します。
+`push` および `main` 向けの `pull_request` 時に、平文混入や`.env.keys`のコミット事故を検知し、処理を中断します。
 
 ### おすすめ構成
 
